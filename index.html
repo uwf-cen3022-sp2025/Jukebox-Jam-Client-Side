@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +7,24 @@
     <link rel="stylesheet" href="/src/styles/main.css">
     <link rel="icon" href="data:,">
 </head>
-
 <body>
-    <!-- Navigation Bar -->
-    <div class="topbar">
-        <ul>
-            <li><a href="#" onclick="loadPage('home')">Home</a></li>
-            <li><a href="#" onclick="loadPage('login')">Login</a></li>
-            <li><a href="#" onclick="loadPage('playlists')">Your Playlists</a></li>
-            <li><a href="#" onclick="loadPage('search')">Search Library</a></li>
-            <li><a href="#" onclick="loadPage('register')">Register</a></li>
 
-        </ul>
-    </div>
+    <!-- Navigation Bar (Now Dynamically Loaded) -->
+    <nav id="navbar"></nav>
 
-    <!-- Mid Section -->
+    <!-- Main Content Area -->
     <div id="app">
-        <h2>Welcome To JukeBox Jam!</h2>
+        <h2>Welcome To Jukebox Jam!</h2>
         <h3>Featured Playlists</h3>
     </div>
 
     <!-- Media Player -->
-    <div class="media-player">
+    <div id="media-player">
         <p id="now-playing">Now Playing: No song selected</p>
     </div>
 
     <!-- JavaScript -->
-    <script src="src/main.js" defer></script>
-</body>
+    <script type="module" src="/src/main.js"></script>
 
+</body>
 </html>
