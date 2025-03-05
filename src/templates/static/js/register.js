@@ -1,3 +1,6 @@
+/*  code to be patched in Sprint 2 -> removing HTML pages and converting to JS
+
+
 async function registerUser(event){
     event.preventDefault();
 
@@ -32,3 +35,4 @@ async function registerUser(event){
 }
 
 document.getElementById("register_form").addEventListener("submit", registerUser);
+*/
