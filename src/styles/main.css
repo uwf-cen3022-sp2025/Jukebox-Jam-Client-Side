@@ -1,13 +1,59 @@
 
+/* Controls background and font for page */
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-image: url("jukeboxjam-gradient.jpg");
+    background-image: url("JukeboxJamBackgroundTitle.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
+    color: white; 
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
+/* Controls effects on the Navbar */
+nav {
+    background-color: rgba(40, 35, 35, 0.9); /* Black with 90% opacity */
+    position: fixed; /* Keep it at the top */
+    top: 0;
+    left: 0;
+    width: 300px; 
+    Height: 100vh;
+    padding: 15px; /* Add padding for spacing */
+    z-index: 1000; /* Ensure it stays above other content */
+    color: rgb(221, 210, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Controls effects of words in Navbar */
+nav a {
+    font-size: 25px; 
+    color: rgb(221, 210, 219); 
+    text-decoration: none; /* Removes underline */
+}
+/* Controls effects of words in Navbar when hovered over. */
+nav a:hover {
+    color: white; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Controls effects of the unordered list in the Navbar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust this value for more spacing */
+}
+
+/* controls appearance of all input fields */
 input {
     width: 100%;
     padding: 10px;
@@ -26,10 +72,12 @@ button {
     border-radius: 5px;
 }
 
+/* background when hovering */
 button:hover {
     background: rgb(25, 116, 45);
 }
 
+/* login and register */
 .login-container, .register-container {
     background: #222;
     width: 250px;
